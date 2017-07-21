@@ -1,8 +1,13 @@
 {
-  "name": "vue-layer",
-  "version": "1.0.0",
+  "name": "vue-layer-loading",
+  "version": "1.0.1",
   "description": "Vue layer project",
-  "author": "liangyongtong <liangyongtong@foxmail.com>",
+  "author": "liangyongtong",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangyt/vue-layer.git"
+  },
   "private": false,
   "main": "dist/layer.js",
   "scripts": {

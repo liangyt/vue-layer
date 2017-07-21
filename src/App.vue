@@ -26,6 +26,7 @@ export default {
     }
   },
   watch: {
+    // 监控蒙层是否显示
     visible (val) {
       // if (val) {
       //   setTimeout(() => {

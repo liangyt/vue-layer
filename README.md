@@ -1,21 +1,23 @@
-# script-loader-test
+# vue-layer-loading
 
-> A Vue.js project
+> vue-layer 主要是用于显示一个加载的状态，默认是一个CSS3写的loading图，可以在组件内容区添加业务需要显示的加载过程中显示的内容.
 
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+# 安装
+npm install vue-layer-loading --save
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 使用
+// 引入组件
+import Layer from 'vue-layer-loading'
+// 引入样式，只需要在开始的地方引用一次就可以了,避免重复引入
+import LayerCss from 'vue-layer-loading/dist/layer.css'
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+<layer
+  v-model="visible" // 是否显示蒙层
+  maskColor="rgba(0, 0, 0, 0.5)" // 蒙层的颜色
+  :wholeWindow="true" // 是否全屏显示，默认全屏
+  :click-mask2-close="false" // 点击蒙层是否消失 默认不消失
+></layer>
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
